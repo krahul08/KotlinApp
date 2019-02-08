@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView
+        xmlns:tools="http://schemas.android.com/tools" android:id="@+id/itemsCard"
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/marginSmall"
+        app:cardCornerRadius="@dimen/marginSmall"
+        android:foreground="?android:attr/selectableItemBackground"
+        xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <LinearLayout
+                  android:layout_width="match_parent"
+                  android:layout_height="match_parent"
+                  android:orientation="vertical"
+                  android:weightSum="1">
+
+        <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:layout_weight=".5"
+                android:weightSum="1"
+                android:baselineAligned="false">
+
+
+            <LinearLayout
+                    android:layout_width="0sp"
+                    android:layout_weight=".5"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:weightSum="1"
+                    tools:ignore="NestedWeights">
+
+                <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/owner"
+                        android:layout_margin="@dimen/marginSmall"
+                        android:layout_gravity="center"
+                        android:gravity="start"
+                        android:textSize="@dimen/text_size_medium"/>
+
+
+                <TextView
+                        android:id="@+id/ownerTextView"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center"
+                        android:gravity="start"
+                        android:textStyle="bold"
+                        android:layout_marginStart="@dimen/marginSmall"
+                        android:textSize="@dimen/text_size_large"
+                        android:layout_marginLeft="@dimen/marginSmall"/>
+
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                    android:layout_width="0sp"
+                    android:layout_weight=".5"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:weightSum="1">
+
+                <TextView android:layout_width="match_parent"
+                          android:layout_height="wrap_content"
+                          android:text="@string/full_name"
+                          android:layout_gravity="center"
+                          android:gravity="end"
+                          android:layout_margin="@dimen/marginSmall"
+                          android:textSize="@dimen/text_size_medium"/>
+
+
+                <TextView
+                        android:id="@+id/fullNameTextView"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center"
+                        android:gravity="end"
+                        android:textStyle="bold"
+                        android:layout_marginEnd="@dimen/marginSmall"
+                        android:textSize="@dimen/text_size_large"
+                        android:layout_marginRight="@dimen/marginSmall"/>
+
+
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:layout_weight=".5">
+
+
+            <TextView android:layout_width="match_parent"
+                      android:layout_height="wrap_content"
+                      android:text="@string/description"
+                      android:layout_gravity="center"
+                      android:gravity="center"
+                      android:layout_margin="@dimen/marginSmall"
+                      android:textSize="@dimen/text_size_medium"/>
+
+
+
+            <TextView
+                    android:id="@+id/descriptionTextView"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:textStyle="bold"
+                    android:layout_marginBottom="@dimen/marginSmall"
+                    android:gravity="center"/>
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</android.support.v7.widget.CardView>
